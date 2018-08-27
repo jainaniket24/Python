@@ -1,0 +1,13 @@
+# Finding the runner-up of the second-highest number in an array.    
+	
+	
+n = int(input())
+arr = map(int, input().split())
+arr = list(arr)
+m = max(arr)
+arr.sort()
+while len(arr) > 0:
+	k = arr.pop()
+	if k != m:
+		print(k)
+		break
